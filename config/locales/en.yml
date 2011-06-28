@@ -1,0 +1,53 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  human:
+    mm:
+      unit: mm
+    g:
+      unit: g
+    MB:
+      unit: MB
+    mAh:
+      unit: mAh
+    Mpx:
+      unit: Mpx
+    hour:
+      unit:
+        zero: hours
+        one: hour
+        other: hours
+    inch:
+      unit:
+        zero: inches
+        one: inch
+        other: inches
+  "Mbit/s": "Mbit/s"
+  "Network Technology": "Network Technology"
+  "1xEV-DO rev":
+    A: "1xEV-DO rev.A"
+  "802":
+    "11b": "802.11b"
+    "11g": "802.11g"
+    "11b/g": "802.11b/g"
+    "11b/g/n": "802.11b/g/n"
+  mm: mm
+  core:
+    one: Core
+    other: Cores
+  voice:
+    one: Voice
+    other: Voices
+  slot:
+    one: Slot
+    other: Slots
+  px: px
+  "Midp 2":
+    "1": "Midp 2.1"
+  "2":
+    "0": "2.0"
+    "2": "2.2"
+    "3": "2.3"
+  "3":
+    "2": "3.2"

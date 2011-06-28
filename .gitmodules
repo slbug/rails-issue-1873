@@ -1,0 +1,3 @@
+[submodule "public/javascripts/respond"]
+	path = public/javascripts/respond
+	url = git://github.com/scottjehl/Respond.git

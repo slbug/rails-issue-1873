@@ -1,0 +1,38 @@
+-# https://github.com/sporkd/compass-html5-boilerplate
+!!! 5
+- ie_html :class => 'no-js', :lang => I18n.locale do
+
+  %head
+    %meta{ :charset => 'utf-8' }
+    %meta{ :name => 'description', :content => yield(:description) }
+    %meta{ :name => 'keywords', :content => yield(:keywords) }
+    %meta{ :name => 'author', :content => '' }
+    %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1.0' }
+
+    %title
+      = yield :title
+      \- test site
+
+    = stylesheet_link_tag 'application'
+    = yield :stylesheets
+
+    = csrf_meta_tags
+
+    = javascript_include_tag "/javascripts/modernizr#{Rails.env == 'production' ? '.min' : ''}"
+    = javascript_include_tag "/javascripts/respond#{Rails.env == 'production' ? '.min' : ''}"
+
+  %body
+    #container
+      %header
+        -#search= render 'shared/search'
+      #main{ :role => "main" }
+        #pjax{ :data => {:'pjax-container' => true} }
+          = render 'layouts/flashes'
+          = yield
+      %footer &copy; #{Date.today.year}
+
+    = javascript_include_tag :application
+    = yield :javascripts
+
+    -# TODO add FInstall.min.js
+

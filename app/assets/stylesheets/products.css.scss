@@ -1,0 +1,21 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.group {
+  background-color: #ccc;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.attribute {
+  font-weight: bold;
+}
+
+.title, .attribute {
+  border: 1px solid #ccc;
+}
+
+body.products {
+  // Place scoped styles here
+}
